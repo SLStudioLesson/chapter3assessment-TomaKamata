@@ -6,25 +6,29 @@ import java.util.ArrayList;
 import com.recipeapp.model.Recipe;
 
 public class JSONDataHandler implements DataHandler {
-        private String filePath;
+    private String filePath;
 
-    public JSONDataHandler(){
+    public JSONDataHandler() {
         filePath = "app/src/main/resources/recipes.json";
     }
 
     public JSONDataHandler(String filePath) {
         this.filePath = filePath;
     }
-    public String getMode(){
+
+    public String getMode() {
         return "JSON";
     }
-    public ArrayList<Recipe> readData() throws IOException{
+
+    public ArrayList<Recipe> readData() throws IOException {
         return null;
     }
-    public void writerData(Recipe recipe) throws IOException{
+
+    public void writerData(Recipe recipe) throws IOException {
 
     }
-    public ArrayList<Recipe> searchData(String keyword) throws IOException{
+
+    public ArrayList<Recipe> searchData(String keyword) throws IOException {
         return null;
     }
 }

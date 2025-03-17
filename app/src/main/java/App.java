@@ -14,19 +14,18 @@ public class App {
             System.out.println("2. JSON");
             System.out.print("Select (1/2): ");
             String choice = reader.readLine();
-            
+
             // 「2」ならJSON、「1」あるいはそれ以外の場合はCSV
             if (choice.equals("1")) {
                 CSVDataHandler csvDataHandler = new CSVDataHandler();
                 RecipeUI recipeUI = new RecipeUI(csvDataHandler);
                 recipeUI.displayMenu();
-                
+
             } else if (choice.equals("2")) {
                 JSONDataHandler jsonDataHandler = new JSONDataHandler();
                 RecipeUI recipeUI = new RecipeUI(jsonDataHandler);
                 recipeUI.displayMenu();
-                
-                
+
             } else {
                 CSVDataHandler csvDataHandler = new CSVDataHandler();
                 RecipeUI recipeUI = new RecipeUI(csvDataHandler);
